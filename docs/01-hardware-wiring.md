@@ -2,7 +2,7 @@
 
 ## 1. ZE08C 引脚定义（关键）
 
-厂商规格书给出的端口顺序，与市面上常见的「VCC-GND-TX-RX」模块**完全相反**：
+厂商规格书给出的端口顺序，与市面上常见的「VCC-GND-TX-RX」模块**完全相反**（原件见 [`datasheets/ZE08C-formaldehyde-module-datasheet-CN.pdf`](datasheets/ZE08C-formaldehyde-module-datasheet-CN.pdf)）：
 
 | 端口 | 定义 | 说明 |
 |---|---|---|

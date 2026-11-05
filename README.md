@@ -119,7 +119,9 @@ ZE08C 的引脚定义与常见模块**顺序相反**，接错会直接烧模块�
     ├── 01-hardware-wiring.md
     ├── 02-ze08c-protocol.md
     ├── 03-build-env.md
-    └── 04-troubleshooting.md
+    ├── 04-troubleshooting.md
+    └── datasheets/
+        └── ZE08C-formaldehyde-module-datasheet-CN.pdf   # 厂商规格书原件（4 页）
 ```
 
 ## 6. 已知限制
@@ -132,7 +134,7 @@ ZE08C 的引脚定义与常见模块**顺序相反**，接错会直接烧模块�
 ## 7. 致谢
 
 - 上游项目：<https://github.com/louliangsheng/daikin-air-sensor>（BRY88AB151K 的原始 yaml 与 PM2105/CM1106 驱动）
-- 甲醛模块规格书：炜盛（Winsen）《黑-ZE08C 甲醛检测模块技术规格书》
+- 甲醛模块规格书：炜盛（Winsen）《黑-ZE08C 甲醛检测模块技术规格书》，原件留存于 [`docs/datasheets/ZE08C-formaldehyde-module-datasheet-CN.pdf`](docs/datasheets/ZE08C-formaldehyde-module-datasheet-CN.pdf)（SHA256 `9d61defb…8122`）
 - 依赖库：[esphome/AsyncTCP](https://github.com/esphome/AsyncTCP)、[esphome/ESPAsyncWebServer](https://github.com/esphome/ESPAsyncWebServer)（LGPL-3.0）
 
 本项目在原厂设备上实测通过，涉及拆机与刷写，**风险自负**：请务必备份原厂固件。

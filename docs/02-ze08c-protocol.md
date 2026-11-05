@@ -2,6 +2,8 @@
 
 本文记录 **ZE08C（TP-501）** 的实际串口协议，以及它与 **ZE08-CH2O** 的差异。所有帧数据来自真实设备抓包，而非仅照抄规格书。
 
+> 厂商规格书原件：[`datasheets/ZE08C-formaldehyde-module-datasheet-CN.pdf`](datasheets/ZE08C-formaldehyde-module-datasheet-CN.pdf)（炜盛 Winsen，4 页）。下文凡引用「规格书」处均指该文档。
+
 ## 1. 与 ZE08-CH2O 的根本差异
 
 | 项目 | ZE08-CH2O（上游驱动支持） | **ZE08C（本项目实测）** |
