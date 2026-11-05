@@ -1,0 +1,17 @@
+# ESPHome / PlatformIO 构建产物
+.esphome/
+.pio/
+.pioenvs/
+.piolibdeps/
+*.log
+
+# Python
+.venv/
+.venv-old/
+venv/
+__pycache__/
+*.pyc
+
+# 系统
+.DS_Store
+Thumbs.db
