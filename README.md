@@ -60,9 +60,11 @@ python3 tools/verify_backup.py   # 校验镜像头、分区表、SHA256
 编译环境有硬性约束，**必须用 ESPHome 2024.12.4**（新版已删除 `custom_component`）。完整步骤与六个坑见 [`docs/03-build-env.md`](docs/03-build-env.md)。
 
 ```bash
-cd esphome
+cd esphome          # 必须在 esphome/ 目录下执行（配置用 ${sysenv.PWD} 定位离线库）
 esphome compile daikin-ch2o-fixed.yaml
 ```
+
+> 已验证：本配置在 ESPHome 2024.12.4 上从零编译通过，占用 Flash 52.7%（967 KB / 1.75 MB）、RAM 14.4%（47 KB）。第三方库随仓库分发（`esphome/libs/`），**无需访问 PlatformIO 注册表**。
 
 ### 3.3 刷入
 
