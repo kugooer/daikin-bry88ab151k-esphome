@@ -38,7 +38,18 @@ esptool.py --port /dev/cu.usbserial-11440 --baud 115200 write_flash 0x0 firmware
 
 ## 原厂固件
 
-厂商原厂 4 MB 完整备份**未随仓库提供**（涉及厂商固件版权，且体积 4.2 MB）。请自行备份：
+厂商原厂 4 MB 完整备份**未随仓库提供**（涉及厂商固件版权，且体积 4.2 MB），已写入 `.gitignore` 排除提交。
+
+本机留存路径：
+
+```
+firmware/daikin-original-stock-4MB.bin      4,194,304 字节
+SHA256  298dd196ec3400a7dfd81b35c765e0e5752860e6726e361b2dcefa128db32549
+```
+
+> 该文件只存在于本地磁盘，`git clone` 拿不到。目前本机共有两份（此目录一份，WorkBuddy 工作区 `daikin-firmware/` 一份），请勿依赖单份副本。
+
+自行备份的方法：
 
 ```bash
 esptool.py --port /dev/cu.usbserial-11440 --baud 115200 read_flash 0 0x400000 daikin-original-stock-4MB.bin

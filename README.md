@@ -53,7 +53,7 @@ shasum -a 256 daikin-original-stock-4MB.bin
 python3 tools/verify_backup.py   # 校验镜像头、分区表、SHA256
 ```
 
-> 原厂 4 MB 备份**未随仓库提供**（体积大且涉及厂商固件版权）。请按上面的命令自行备份并核对校验值。
+> 原厂 4 MB 备份**未随仓库提供**（体积大且涉及厂商固件版权），已写入 `.gitignore`。本机留存于 `firmware/daikin-original-stock-4MB.bin`（4,194,304 字节），校验值 `298dd196…2549`。`git clone` 不会包含该文件，请按上面的命令自行备份。
 
 ### 3.2 编译
 
@@ -114,6 +114,7 @@ ZE08C 的引脚定义与常见模块**顺序相反**，接错会直接烧模块�
 │   └── capture_boot.py          # 抓 ESP32 上电日志
 ├── firmware/
 │   ├── daikin-bry88ab151k-ze08c-v4.bin   # 已验证的 OTA 固件
+│   ├── daikin-original-stock-4MB.bin     # 原厂备份：本地留存，.gitignore 排除，不随仓库分发
 │   └── 接线参考图.jpg
 └── docs/
     ├── 01-hardware-wiring.md

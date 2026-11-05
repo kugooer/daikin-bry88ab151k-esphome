@@ -15,3 +15,7 @@ __pycache__/
 # 系统
 .DS_Store
 Thumbs.db
+
+# 厂商原厂固件：仅在本地留存，不入库（版权 + 体积）
+# 放在 firmware/ 下便于与 OTA 镜像集中管理，git 视为未跟踪文件
+firmware/daikin-original-stock-4MB.bin
